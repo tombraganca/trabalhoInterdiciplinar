@@ -73,6 +73,6 @@ aquele risco.
 ```
 # Participantes
 > - Fernando [Github](https://github.com/feeluiz)
-> -
+> - Gleydiston Bragança
 > -
 > -
