@@ -58,8 +58,19 @@ aquele risco.
 > - Plano de Comunicação
 > - Planejamento de Riscos
 
+## Desenvolvimento
 
+### Organização dos Arquivos
+```
 
+├── README.md (Arquivo de introdução)
+├── docs/ (Documentos do Projeto)
+├── development/ (Base de code)
+│   ├── Hardware/ (Projeto do ESP32)
+│   ├── Integration/ (Middleware de integração com Telegram)
+└── Fim
+
+```
 # Participantes
 > - Fernando [Github](https://github.com/feeluiz)
 > -
