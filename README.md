@@ -49,7 +49,7 @@ aquele risco.
 > - NodeJS API integração Telegram
 
 ## Gerência de Projeto
-* para mais detalhes [clique aqui](docs/gerenciaprojeto.md)
+* para mais detalhes [clique aqui](docs/gerenciadeprojeto.md)
 > - Termo de Abertura do Projeto (TAP)
 > - Declaração de Escopo e EAP
 > - Matriz RACI
