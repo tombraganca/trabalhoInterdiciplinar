@@ -42,11 +42,14 @@ aquele risco.
 
 ## 3. RECURSOS
 ### 3.1. HARDWARE
-> - Esp32
-> - Sensor de detecção de fumaça e gases inflamáveis (MQ-2)
+-> Sensor de Umidade e Temperatura DHT11
+-> Sensor de Gás MQ-2 Inflamável e Fumaça
+-> Sensor de Chama / Fogo
+-> Módulo ESP32-CAM com Camera OV2640 2MP
+
 ### 3.2. SOFTWARE
 > - Eclipse IDE for C/C++ Developers
-> - NodeJS API integração Telegram
+
 
 ## Gerência de Projeto
 * para mais detalhes [clique aqui](docs/gerenciadeprojeto.md)
