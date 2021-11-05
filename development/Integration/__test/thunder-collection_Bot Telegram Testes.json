@@ -1,0 +1,66 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Bot Telegram Testes",
+    "dateExported": "2021-11-05T00:27:26.224Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "containerId": "",
+            "sortNum": 10000,
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.io)"
+                }
+            ],
+            "colId": "488dfb18-ae59-43b8-b9d4-d2ee82c5ce5b",
+            "name": "Teste Inicial",
+            "url": "https://api.telegram.org/bot{{bot_token}}/getUpdates",
+            "method": "GET",
+            "modified": "2021-11-04T23:53:46.921Z",
+            "created": "2021-11-04T23:53:46.921Z",
+            "_id": "ce9cc182-20f2-486b-9b8e-5484109cb412",
+            "params": [],
+            "tests": []
+        },
+        {
+            "containerId": "",
+            "sortNum": 20000,
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.io)"
+                }
+            ],
+            "colId": "488dfb18-ae59-43b8-b9d4-d2ee82c5ce5b",
+            "name": "SendMessage",
+            "url": "https://api.telegram.org/bot{{bot_token}}/sendMessage?chat_id={{chat_id}}&text=Teste",
+            "method": "GET",
+            "modified": "2021-11-05T00:25:47.833Z",
+            "created": "2021-11-04T23:57:16.495Z",
+            "_id": "e1fd3ab1-0a8f-43c0-9465-cf68db35d89b",
+            "params": [
+                {
+                    "name": "chat_id",
+                    "value": "{{chat_id}}",
+                    "isPath": false
+                },
+                {
+                    "name": "text",
+                    "value": "Teste",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
