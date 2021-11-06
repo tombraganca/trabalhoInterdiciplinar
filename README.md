@@ -42,10 +42,10 @@ aquele risco.
 
 ## 3. RECURSOS
 ### 3.1. HARDWARE
--> Sensor de Umidade e Temperatura DHT11
--> Sensor de Gás MQ-2 Inflamável e Fumaça
--> Sensor de Chama / Fogo
--> Módulo ESP32-CAM com Camera OV2640 2MP
+> - Sensor de Umidade e Temperatura DHT11
+> - Sensor de Gás MQ-2 Inflamável e Fumaça
+> - Sensor de Chama / Fogo
+> - Módulo ESP32-CAM com Camera OV2640 2MP
 
 ### 3.2. SOFTWARE
 > - Eclipse IDE for C/C++ Developers
