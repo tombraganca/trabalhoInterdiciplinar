@@ -1,0 +1,6 @@
+{
+    "board": "esp32:esp32:esp32wrover",
+    "configuration": "PartitionScheme=huge_app,FlashMode=qio,FlashFreq=40,UploadSpeed=115200,DebugLevel=none",
+    "sketch": "telebot.ino",
+    "port": "/dev/ttyACM0"
+}
