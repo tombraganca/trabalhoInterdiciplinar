@@ -75,7 +75,7 @@ aquele risco.
 
 ```
 # Participantes
-> - Fernando [Github](https://github.com/feeluiz)
-> - Gleydiston Bragança
-> -
-> -
+> - Fernando Luiz [Github](https://github.com/feeluiz)
+> - Gleydiston Bragança [Github](https://github.com/tombraganca)
+> - Rafael Ferreira Fernandes [Github](https://github.com/Faeu680)
+> - Samuel Lobo Chiodi [Github](https://github.com/LeumasLC)
