@@ -78,6 +78,30 @@ public:
         return len;
     }
 
+    size_t sendPicture(int64_t userid, AsyncTelegram2 telegram)
+    {
+
+        Serial.println("Camera capture requested");
+
+        setLamp(100);
+        camera_fb_t *fb = esp_camera_fb_get();
+        setLamp(0);
+        if (!fb)
+        {
+            Serial.println("Camera capture failed");
+            return 0;
+        }
+        size_t len = fb->len;
+        if (!telegram.sendPhoto(userid, fb->buf, fb->len))
+        {
+            len = 0;
+            telegram.sendTo(userid, "Error! Picture not sent.");
+        }
+
+        esp_camera_fb_return(fb); // Clear buffer
+        return len;
+    }
+
 private:
     int lampChannel = 7;         // a free PWM channel (some channels used by camera)
     const int pwmfreq = 50000;   // 50K pwm frequency

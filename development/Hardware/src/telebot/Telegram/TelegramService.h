@@ -16,7 +16,7 @@ public:
 
         client.setCACert(telegram_cert);
 
-        instance.setUpdateTime(1000);
+        instance.setUpdateTime(SENSOR_INTERVAL);
         instance.setTelegramToken(token);
         Serial.print("\nTestando conexao Telegram... ");
         instance.begin() ? Serial.println("OK") : Serial.println("NOK");
