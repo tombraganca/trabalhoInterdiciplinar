@@ -52,7 +52,7 @@ aquele risco.
 ### RESQUISITOR
 > - [Instruções](development/Hardware/src/REQUIREMENTS.md)
 ## Gerência de Projeto
-* para mais detalhes [clique aqui](docs/gerenciadeprojeto.md)
+* para mais detalhes [clique aqui](docs/)
 > - Termo de Abertura do Projeto (TAP)
 > - Declaração de Escopo e EAP
 > - Matriz RACI
