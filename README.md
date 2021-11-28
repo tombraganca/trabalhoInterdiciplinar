@@ -48,9 +48,9 @@ aquele risco.
 > - Módulo ESP32-CAM com Camera OV2640 2MP
 
 ### 3.2. SOFTWARE
-> - Eclipse IDE for C/C++ Developers
-
-
+> - [Visual Studio Code](https://code.visualstudio.com/) + [Arduino Extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino)
+### RESQUISITOR
+> - [Instruções](development/Hardware/src/REQUIREMENTS.md)
 ## Gerência de Projeto
 * para mais detalhes [clique aqui](docs/gerenciadeprojeto.md)
 > - Termo de Abertura do Projeto (TAP)
