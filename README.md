@@ -51,7 +51,7 @@ aquele risco.
 > - [Visual Studio Code](https://code.visualstudio.com/) + [Arduino Extension](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino)
 ### RESQUISITOR
 > - [Instruções](development/Hardware/src/REQUIREMENTS.md)
-## Gerência de Projeto
+## 4. Gerência de Projeto
 * para mais detalhes [clique aqui](docs/)
 > - Termo de Abertura do Projeto (TAP)
 > - Declaração de Escopo e EAP
@@ -61,9 +61,10 @@ aquele risco.
 > - Plano de Comunicação
 > - Planejamento de Riscos
 
-## Desenvolvimento
+## 5. Desenvolvimento
 
-### Organização dos Arquivos
+
+### 5.1 Organização dos Arquivos
 ```
 
 ├── README.md (Arquivo de introdução)
@@ -71,9 +72,19 @@ aquele risco.
 ├── development/ (Base de code)
 │   ├── Hardware/ (Projeto do ESP32)
 │   ├── Integration/ (Middleware de integração com Telegram)
+|── assets (Arquivos de mídia diversos)
 └── Fim
 
 ```
+
+### 5.2 Circuito
+
+![](./assets/circuito.png)
+
+### 5.3 Esquema do sistema
+![](./assets/Esquema.png)
+
+
 # Participantes
 > - Fernando Luiz [Github](https://github.com/feeluiz)
 > - Gleydiston Bragança [Github](https://github.com/tombraganca)
