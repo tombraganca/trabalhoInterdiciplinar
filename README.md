@@ -42,7 +42,7 @@ aquele risco.
 
 ## 3. RECURSOS
 ### 3.1. HARDWARE
-> - ~~Sensor de Umidade e Temperatura DHT11~~
+> - Sensor de Umidade e Temperatura DHT11
 > - Sensor de Gás MQ-2 Inflamável e Fumaça
 > - Sensor de Chama / Fogo
 > - Módulo ESP32-CAM com Camera OV2640 2MP
@@ -76,13 +76,18 @@ aquele risco.
 └── Fim
 
 ```
+### 5.2 ESP32 - CAM
 
-### 5.2 Circuito
+![](./docs/images/ESP32-CAM.png)
+fonte: "https://github.com/SeeedDocument/forum_doc/blob/master/reg/ESP32_CAM_V1.6.pdf"
+### 5.3 Circuito
 
-![](./assets/circuito.png)
+![](./docs/images/Circuito.png)
+fonte: "Autoria
 
-### 5.3 Esquema do sistema
-![](./assets/Esquema.png)
+### 5.4 Esquema do sistema
+![](./docs/images/Esquema.png)
+
 
 
 # Participantes
