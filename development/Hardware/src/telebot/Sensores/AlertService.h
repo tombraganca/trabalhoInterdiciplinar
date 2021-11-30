@@ -11,14 +11,14 @@ public:
     void init(int pin)
     {
         ALERT_PIN = pin;
-        pinMode (ALERT_PIN, OUTPUT);
+        pinMode(ALERT_PIN, OUTPUT);
     }
 
     void execute()
     {
         if (active)
         {
-            digitalWrite (ALERT_PIN, LOW);
+            digitalWrite(ALERT_PIN, LOW);
             active = false;
         }
         else
@@ -26,6 +26,12 @@ public:
             digitalWrite(ALERT_PIN, HIGH);
             active = true;
         }
+    }
+
+    void stop()
+    {
+        digitalWrite(ALERT_PIN, LOW);
+        active = false;
     }
 
     void print()

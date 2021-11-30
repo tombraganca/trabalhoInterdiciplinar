@@ -22,12 +22,12 @@ public:
         instance.begin() ? Serial.println("OK") : Serial.println("NOK");
 
         char welcome_msg[64];
-        snprintf(welcome_msg, 64, "BOT @%s online.\nTente com comando /foto.", instance.getBotName());
+        snprintf(welcome_msg, 64, "BOT @%s online.\nTente com comando /foto ou /Temperatura.", instance.getBotName());
         instance.sendTo(userid, welcome_msg);
         started = true;
     };
 
-    void getClientMessages(CameraService camera)
+    void getClientMessages(CameraService camera, TempService temp)
     {
 
         if(!started) {
@@ -53,6 +53,13 @@ public:
                         Serial.println("Foto Enviada com Sucesso");
                     else
                         instance.sendMessage(msg, "Erro, falha no envio.");
+                }else if (msg.text.equalsIgnoreCase("/temperatura"))
+                {
+                    Serial.println("\nEnviado Leitura");
+                    if (temp.sendLecture(msg, instance))
+                        Serial.println("Leitura Enviada com Sucesso");
+                    else
+                        instance.sendMessage(msg, "Erro, falha no envio.");
                 }
                 else
                 {
@@ -60,7 +67,7 @@ public:
                     Serial.println(msg.text);
                     String replyStr = "Mensagem Recebida:\n";
                     replyStr += msg.text;
-                    replyStr += "\nTente o Comando /foto";
+                    replyStr += "\nTente o Comando /foto\n e /temperatura para leitura de umidade e temperatura";
                     instance.sendMessage(msg, replyStr);
                 }
             }

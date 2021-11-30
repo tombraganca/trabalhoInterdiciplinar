@@ -2,7 +2,7 @@
 #define TEMPERATURE_SERVICE_H
 
 #include "DHT.h"
-
+#include <AsyncTelegram2.h>
 
 DHT dht(DHTPIN, DHTTYPE);
 
@@ -17,30 +17,36 @@ public:
     void init()
     {
         dht.begin();
+        Serial.println("Sensor DHT11 iniciado.");
     }
 
     void read()
     {
         umidade = dht.readHumidity();
         temp = dht.readTemperature();
-
     }
 
-    void print()
+    bool sendLecture(TBMessage &msg, AsyncTelegram2 telegram)
     {
+
+        Serial.println("Leitura de temperatura iniciada.");
+
+        read();
+        char welcome_msg[64];
         if (isnan(temp) || isnan(umidade))
         {
-            Serial.println("Falha na leitura DHT11");
+
+            telegram.sendMessage(msg, "Falha na leitura DHT11.");
+            Serial.println("Falha na leitura sensor DHT11.");
+            return false;
         }
         else
         {
-            Serial.print("Umidade: ");
-            Serial.print(umidade);
-            Serial.print(" %t");
-            Serial.print("Temperatura: ");
-            Serial.print(temp);
-            Serial.println(" *C");
+            char welcome_msg[64];
+            snprintf(welcome_msg, 64, "Umidade: %0.2f %t \n Temperatura: %0.2f *C", umidade, temp);
+            telegram.sendMessage(msg, welcome_msg);
         }
+        return true;
     }
 };
 #endif // !TEMPERATURE_SERVICE_H
