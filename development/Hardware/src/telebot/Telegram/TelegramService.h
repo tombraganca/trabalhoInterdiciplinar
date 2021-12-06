@@ -21,8 +21,8 @@ public:
         Serial.print("\nTestando conexao Telegram... ");
         instance.begin() ? Serial.println("OK") : Serial.println("NOK");
 
-        char welcome_msg[64];
-        snprintf(welcome_msg, 64, "BOT @%s online.\nTente com comando /foto ou /Temperatura.", instance.getBotName());
+        char welcome_msg[67];
+        snprintf(welcome_msg, 67, "BOT @%s online.\nTente com comando /foto ou /Temperatura.", instance.getBotName());
         instance.sendTo(userid, welcome_msg);
         started = true;
     };
