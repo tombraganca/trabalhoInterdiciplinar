@@ -88,7 +88,7 @@ fonte: "Autoria
 ### 5.4 Esquema do sistema
 ![](./docs/images/Esquema.png)
 
-
+> Apresentação completa  [AQUI](https://docs.google.com/presentation/d/1GClV9d5_xi1FUAm4DIBBcKSHwoUA_OzUvlBqvLDye1I/edit?usp=sharing)
 
 # Participantes
 > - Fernando Luiz [Github](https://github.com/feeluiz)
